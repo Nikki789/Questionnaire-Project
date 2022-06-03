@@ -1,0 +1,103 @@
+a:link{
+    display: grid;
+    font-weight: 700;
+}
+
+.textBox {
+    height: 25px;
+    width: 130px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+#outside {
+    background-color: lightskyblue;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+form {
+    --background: white;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    background: white;
+    padding: 0 20px 0 20px;
+    border-radius: 3px;
+}
+
+
+#backBtn{
+    padding: 1.5em 2em;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+#submitBtn{
+    padding: 1.5em 2em;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+/*Navigation bar at the bottom of the questionnaire HTML page*/
+.navbar {
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+
+#navbar-nav {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul {
+    margin: 0;
+    list-style: none;
+}
+
+#downloadFile, #permission {
+    visibility: hidden;
+}
+
+
+/*Adjusts the form and the buttons to fit on phone screen*/
+@media screen and (max-width: 800px) {
+    #backBtn, .submitBtn{
+        margin: 0 auto;
+    }
+
+    #backBtn{
+        padding: 1em 1.3em;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    #submitBtn{
+        padding: 1em 1.3em;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+
+    form{
+        width:75%;
+        padding: 0 30px 0 10px;
+    }
+
+    a:link {
+        padding: 0.8em 1em;
+        margin-left: 30px;
+    }
+}

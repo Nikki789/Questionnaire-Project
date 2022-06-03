@@ -1,0 +1,77 @@
+/*Main CSS*/
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.newLine{
+  white-space: pre;
+}
+
+/*Centers text*/
+.center {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.heading{
+  text-align: center;
+}
+
+
+button{
+  font-weight: 700;
+  border:1px solid black;
+  border-radius: 1em;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: lightskyblue;
+}
+
+button:hover{
+  color: #FFFFFF;
+  border:1px solid #FFFFFF;
+  opacity: 0.8;
+}
+
+.customButtonSize{
+  padding: 1em 1.5em;
+}
+
+a:link {
+  color: black;
+  border:1px solid black;
+  border-radius: 1em;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: lightskyblue;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+a:link:hover {
+  color: #FFFFFF;
+  border:1px solid #FFFFFF;
+  opacity: 0.8;
+}
+
+a:visited{
+  border:1px solid black;
+  color: black;
+}
+
+a:visited:hover{
+  border:1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+

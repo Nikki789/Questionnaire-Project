@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="./stylesheets/index.css" rel="stylesheet">
+    <link href="./stylesheets/questionnaire.css" rel="stylesheet">
+    <link href="stylesheets/themes.css" rel="stylesheet">
+
+    <title>Questionnaire</title>
+</head>
+
+<body>
+
+<div id="outside">
+
+    <form class="submitForm">
+
+        <header>
+            <ul id="data"></ul>
+            <div id="radioButton"></div>
+            <div id="checkbox"></div>
+        </header>
+
+        <h3 class="center">Click here to go back or submit the questionnaire:</h3>
+
+        <nav class="navbar">
+            <ul id="navbar-nav">
+                <li><button id ="backBtn"
+                            onclick="window.location.href = './index.html';"
+                            type="button"> Back
+                    </button>
+                </li>
+
+                <li><button id ="submitBtn"
+                            type="submit"> Submit
+                </button>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="center">
+        <h3>Submit the questionnaire first in order to download the answers.</h3>
+
+            <div class="bold" id="check"></div>
+
+        <a id="downloadFile">Download as JSON</a>
+        </div>
+
+        <h3 id="permission" class="center">Please give the Questionnaire App permission to download the file.</h3>
+
+    </form>
+    </div>
+
+</body>
+
+<script src="js/questionnaire.js"></script>
+
+</html>

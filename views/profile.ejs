@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MainPage</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+    <link href="/stylesheets/index.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/profile.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/themes.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<header class="heading">
+    <h1 class="bold">Profile information</h1>
+</header>
+
+<div class="center">
+
+    <div class="bold">
+        <div class="newLine">
+        Id: <%= user.google.id %>
+        <div id="truncate-overflow">Token: <%= user.google.token %></div>
+        Email: <%= user.google.email %>
+        Name: <%= user.google.name %>
+        </div>
+    </div>
+
+    <h3>Click here to log out:</h3>
+    <div class="newLine">
+    <a class="bold" href="/logout">Logout</a>
+    </div>
+
+    <h3>Go to the questionnaire:</h3>
+    <button class="customButtonSize"
+            onclick="window.location.href = '/questionnaire.html';"
+            type="button">Start questionnaire
+    </button>
+
+</div>
+
+</body>
+</html>

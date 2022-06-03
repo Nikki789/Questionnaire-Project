@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MainPage</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+    <link href="stylesheets/index.css" rel="stylesheet">
+    <link href="stylesheets/themes.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="heading">
+    <h1>Welcome to my Web Programming Coursework</h1>
+    <h3>UP899244</h3>
+</header>
+
+
+<div class="center">
+    <h3>This website switches the theme automatically based on your OS or browser settings.</h3>
+
+    <h3>Click here to login with Facebook:</h3>
+    <a onclick="login()" id="login" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+    <div id="status"></div>
+    <div id="profilePicture"></div>
+    <div id="statusAndInfo"></div>
+
+    <h3>Click to login with Google:</h3>
+    <a href="/googleOAuth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+
+    <h3>Click here to load the questionnaire:</h3>
+    <button class="customButtonSize"
+            onclick="window.location.href = '/questionnaire.html';"
+            type="button">Start questionnaire
+    </button>
+
+</div>
+
+</body>
+
+<script src="./js/facebookLogin.js"></script>
+</html>

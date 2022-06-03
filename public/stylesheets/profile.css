@@ -1,0 +1,16 @@
+/*Multi-line overflow which truncates the text for the token at profile.ejs */
+/*Global variable*/
+
+html {
+    max-width: 25rem;
+    margin: 2rem auto;
+}
+
+#truncate-overflow {
+    display: inline-block;
+    white-space:nowrap;
+    width: 90%;
+    overflow: hidden;
+    padding-right: 0rem;
+    text-overflow:ellipsis;
+}
