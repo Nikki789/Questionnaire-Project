@@ -1,3 +1,4 @@
+# Key features
 This README.md file explains the key features of this application, how to use them and additional details about the design and implementation rationale.
 
 The index.html page is the main page of the Questionnaire engine.
@@ -36,4 +37,6 @@ The package.json is set to run on the command "npm start" and includes details a
 The stylesheets have been split into multiple files, with a index.css file and themes.css as main stylesheets whose content is used by two or more pages.
 The rest of the stylesheets are used only by one html/ejs page.
 
-
+# Instructions to run
+1. To run the questionnaire website, navigate to the current directory in the terminal.
+2. Type in "npm start" and navigate to http://localhost:8080/
