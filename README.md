@@ -10,11 +10,9 @@ You can login with Facebook or Google on the main page.
 The Facebook feature was implemented by using the Facebook JS SDK (//connect.facebook.net/en_US/sdk.js).
 By logging in, you will see your login status, profile picture, account ID and name.
 
-The Google oAuth feature was based on the Passport strategy(http://www.passportjs.org/packages/passport-google-oauth/).
+The Google oAuth feature was based on the Passport strategy (http://www.passportjs.org/packages/passport-google-oauth/).
 It uses routing to navigate through the pages and receive a callback in order to lead back to the questionnaire app.
-Additionally, it connects with MongoDB and uses a schema to authorize the user and receive data about his account.
-By logging in, you should be able to see your ID, Token, Email and your name.
-Afterwards you can log out or load the questionnaire.
+By logging in, you should be able to see your ID, Token, Email and your name. Afterwards you can log out or load the questionnaire.
 
 You can fill in a questionnaire based on the example JSON file and submit the data. 
 The questionnaire follows a linear flow of questions and lets the user go back to the main page with a button.
